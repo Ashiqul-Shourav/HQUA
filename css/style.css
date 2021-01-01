@@ -774,3 +774,7 @@ h2::before {
     padding: 15px;
     color: #ccc
 }
+
+.copyright a {
+    color: #ccc!important;
+}
