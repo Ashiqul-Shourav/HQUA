@@ -815,6 +815,9 @@ h2::before {
     .teachers h4 {
         font-size: 2rem;
     }
+    .slider {
+        background-color: #ffffff;
+    }
 }
 
 @media (max-width: 768px) {
@@ -847,6 +850,7 @@ h2::before {
     .teachers .flex>div {
         flex: 0 100%;
         max-width: 100%;
+        margin-right: 0;
     }
     .contact-main {
         justify-content: center;
@@ -866,4 +870,11 @@ h2::before {
     }
 }
 
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+    .slider-main {
+        height: 250px;
+    }
+    .nav-bar-main {
+        display: none;
+    }
+}
