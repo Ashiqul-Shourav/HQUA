@@ -142,7 +142,7 @@ a:link {
 }
 
 section {
-    padding: 6rem;
+    padding: 6rem 1.5rem;
 }
 
 h2 {
@@ -276,6 +276,10 @@ h2::before {
 
 .nav-bar {
     height: 5rem;
+}
+
+.nav {
+    padding: 0 1.5rem;
 }
 
 .nav.flex {
@@ -474,8 +478,6 @@ h2::before {
     border-color: yellow;
 }
 
-.gallery .gallery-all {}
-
 .gallery .flex .card {
     flex: 1 0 21%;
     margin: 10px;
@@ -636,7 +638,8 @@ h2::before {
 .be-a-teacher .container {
     background: yellowgreen;
     padding: 40px 0;
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     border-radius: 5px;
     margin-top: -102.5px;
     margin-bottom: -102.5px;
@@ -783,9 +786,84 @@ h2::before {
 
 /* Responsive Design */
 
-@media (max-width:991px) {
-    .top-bar-main.flex,
-    {
+@media (max-width:992px) {
+    .top-bar-main.flex {
         padding: 0 1.5rem;
     }
+    .slider-main {
+        height: 450px;
+    }
+    .admission .flex {
+        justify-content: center;
+    }
+    .admission .admission-item {
+        margin: 1rem;
+    }
+    .gallery .flex .card {
+        flex: 0 0 32%;
+        max-width: 25%;
+    }
+    .students .flex .card {
+        flex: 0 25%;
+    }
+    h2::after {
+        left: 18%;
+    }
+    h2::before {
+        right: 18%;
+    }
+    .teachers h4 {
+        font-size: 2rem;
+    }
 }
+
+@media (max-width: 768px) {
+    #topBar {
+        display: none;
+    }
+    .slider-main {
+        height: 330px;
+    }
+    video {
+        max-width: 768px;
+        height: 330px;
+    }
+    .gallery .flex .card {
+        flex: 0 100%;
+        max-width: 100%;
+    }
+    .students .flex .card {
+        flex: 0 100%;
+        max-width: 100%;
+    }
+    .admission .admission-item {
+        flex: 0 100%;
+        max-width: 100%;
+    }
+    .upcoming-events .flex>div {
+        flex: 0 100%;
+        max-width: 100%;
+    }
+    .teachers .flex>div {
+        flex: 0 100%;
+        max-width: 100%;
+    }
+    .contact-main {
+        justify-content: center;
+    }
+    .contact .flex>div {
+        flex: 0 100%;
+    }
+    .footer-main.flex>div {
+        flex: 0 46%;
+    }
+    .footer-main.flex>div:last-child {
+        flex: 0 100%;
+    }
+    h2::after,
+    h2::before {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {}
