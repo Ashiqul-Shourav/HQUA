@@ -97,6 +97,7 @@ a:link {
 
 .container {
     max-width: 114rem;
+    width: 100%;
     display: block;
     margin: 0 auto;
 }
@@ -777,4 +778,14 @@ h2::before {
 
 .copyright a {
     color: #ccc!important;
+}
+
+
+/* Responsive Design */
+
+@media (max-width:991px) {
+    .top-bar-main.flex,
+    {
+        padding: 0 1.5rem;
+    }
 }

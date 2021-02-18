@@ -1,5 +1,6 @@
 // Declaration
 const slideleft = document.querySelector('.btn-left');
+console.log(slideleft);
 const slideright = document.querySelector('.btn-right');
 
 var slider = document.querySelector('.slider-main ul');
